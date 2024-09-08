@@ -204,6 +204,11 @@ hr{
 
 
 @media (max-width: 750px){
+
+  .App{
+    height:100%;
+  }
+  
   .second--body{
     padding: 20px;
   }

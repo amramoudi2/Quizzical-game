@@ -11,13 +11,13 @@ body{
 }
 
 .App{
-  height: 100vh;
+  height: 100%;
 }
 
 
 
 .second--body{
-  padding: 100px;
+  padding: 100px 100px 0 100px;
 }
 
 
@@ -61,6 +61,8 @@ body{
   background-position-x: left;
   background-position-y: bottom;
   background-size: 20% max(25%);
+  margin-top: auto;
+  height: 100vh;
 }
 
 
@@ -119,24 +121,13 @@ hr{
   border-radius: 10px;
   width: 240px;
   height: 40px;
-}
-
-
-.inputs .radio--btn:checked + .radio--label{
-  background-color: #D6DBF5;
+  text-align: center;
 }
 
 .loading{
   text-align: center;
   color: #293264;
   font-size: 50px;
-}
-
-.results--alighn{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .submit--btn{
@@ -156,39 +147,10 @@ hr{
   margin-top: 40px;
 }
 
-.wrong--answer,.correct--answer{
-  padding: 5px 10px;
-  border-radius: 15px;
-  color: #4D5B9E;
-  font-weight: normal;
-}
-
-.wrong--answer{
-  background-color: #F8BCBC;
-}
-
-.correct--answer{
-  background-color: #94D7A2;
-}
-
-.results--info{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.results--hr{
-  color: #DBDEF0;
-}
-
-.results{
-  margin-top: 100px;
-}
-
 .results--score{
   color: #293264;
   font-size: 1.7rem;
+  margin-right: 20px;
 }
 
 .results--btn{
@@ -203,12 +165,7 @@ hr{
 }
 
 
-@media (max-width: 750px){
-
-  .App{
-    height:100%;
-  }
-  
+@media (max-width: 850px){
   .second--body{
     padding: 20px;
   }
@@ -260,34 +217,6 @@ hr{
     margin-top: 20px;
   }
 
-  .wrong--answer,.correct--answer{
-    padding: 0 5px;
-    border-radius: 15px;
-    color: #4D5B9E;
-    font-weight: normal;
-  }
-
-  .results--messge{
-    font-size: 0.8rem;
-    font-weight: normal;
-    max-width: 95%;
-    margin: auto;
-  }
-
-  .results--info{
-    margin-top: 20px;
-    margin-bottom: 200px;
-    gap: 20px;
-  }
-
-  .results--hr{
-    max-width: 95%;
-  }
-
-  .results{
-    margin-top: 100px;
-  }
-
   .results--score{
     font-size: 0.8rem;
   }
@@ -295,17 +224,5 @@ hr{
   .results--btn{
     font-size: 0.8rem;
     padding: 10px 20px;
-  }
-
-  .resutl--question{
-    margin-bottom: 10px;
-  }
-
-  #wrong--answer,#right--answer{
-    font-size: 0.8rem;
-    font-weight: normal;
-    max-width: 100%;
-    padding: 0 15px;
-    line-height: 18px;
   }
 }
